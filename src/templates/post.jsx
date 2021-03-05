@@ -23,7 +23,7 @@ const PostPrevNext = ({ prev, next }) => {
           </Link>
         ) : (
           <Link to={prev.fields.slug} rel="prev" className="post-prev">
-            <i className="fas fa-arrow-left" />
+            <i className="fas fa-arrow-left" />&nbsp;
             {prev.frontmatter.title}
           </Link>
         ))}
@@ -35,7 +35,7 @@ const PostPrevNext = ({ prev, next }) => {
           </Link>
         ) : (
           <Link to={next.fields.slug} rel="next" className="post-next">
-            {next.frontmatter.title}
+            {next.frontmatter.title}&nbsp;
             <i className="fas fa-arrow-right" />
           </Link>
         ))}
@@ -48,7 +48,6 @@ const Post = ({ data, pageContext }) => {
   const { html, excerpt, timeToRead, frontmatter } = post;
   const { title, tags, cover, date, category } = frontmatter;
   const { slug, prev, next } = pageContext;
-  const Disqus = loadable(() => import('../components/disqus'));
   return (
     <Layout>
       <SEO title={title} description={excerpt} image={cover.publicURL} path={slug} articleDate={date} />
@@ -59,7 +58,6 @@ const Post = ({ data, pageContext }) => {
       {cover && <Img fluid={cover.childImageSharp.fluid} />}
       <div className="markdowm-body" dangerouslySetInnerHTML={{ __html: html }} />
       <PostPrevNext prev={prev} next={next} />
-      <Disqus slug={slug} title={title} />
     </Layout>
   );
 };

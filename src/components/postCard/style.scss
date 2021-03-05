@@ -11,8 +11,7 @@ $card-height: 275px;
   grid-gap: $relative-spacing-xlarge;
   min-height: $card-height;
   border-radius: $base-border-radius * 4;
-  box-shadow: $spacing-normal 0 $spacing-large var(--black);
-  transition: all $transition-faster-easein;
+  background-color: var(--bg3);
 
   > .post-card-cover {
     border-top-left-radius: $base-border-radius * 4;
@@ -27,29 +26,11 @@ $card-height: 275px;
     .post-title {
       margin-block-end: 0;
       margin-block-start: 0;
-      transition: all $transition-slower-ease;
-
-      &:hover {
-        background: linear-gradient(
-          0.25turn,
-          var(--subtle-h1-1),
-          var(--subtle-h1-2),
-          var(--subtle-h1-3)
-        );
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
     }
 
     .post-subtitle {
       margin: $spacing-small 0;
     }
-  }
-
-  &:hover {
-    box-shadow: $spacing-normal 0 $spacing-xxlarge var(--post-card-hover);
-    transform: translate(0, -$spacing-normal);
   }
 
   @include media-breakpoint-down($breakpoint-sm) {

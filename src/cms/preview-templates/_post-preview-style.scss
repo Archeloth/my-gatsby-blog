@@ -10,7 +10,6 @@
       margin-block-end: 0;
       margin-block-start: 0;
       font-size: $header-size-2;
-      transition: all $transition-slower-ease;
     }
 
     .post-subtitle {
@@ -18,22 +17,11 @@
     }
   }
 
-  .post-category {
-    box-shadow: 0 0 $spacing-small #757575;
-    &:hover {
-      color: #282c35;
-      background: #f9ffee;
-      box-shadow: 0 0 $spacing-large #757575;
-    }
-  }
-
   .post-tags {
     > li > a {
-      box-shadow: 0 0 $spacing-xsmall #03dac6;
       &:hover {
         color: #282c35;
         background: #f9ffee;
-        box-shadow: 0 0 $spacing-large #03dac6;
       }
     }
   }

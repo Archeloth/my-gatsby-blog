@@ -5,7 +5,7 @@
   li {
     display: flex;
     font-size: $base-relative-font-size * 1.4;
-    border-left: $base-border / 3 solid var(--yellow1);
+    border-left: $base-border / 3 solid var(--yellow);
     transition: background-color $transition-faster-easeinout;
     @include media-breakpoint-down($breakpoint-sm) {
       flex-direction: column;
@@ -14,7 +14,7 @@
     &:hover {
       background-color: var(--bg2);
       .post-date-timetoread p:nth-child(1) {
-        border-left: $base-border solid var(--yellow1);
+        border-left: $base-border solid var(--yellow);
       }
 
       > a {

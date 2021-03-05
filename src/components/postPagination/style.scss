@@ -1,11 +1,18 @@
 @import "../../layout/style/base/setting";
+@import "../../layout/style/base/breakpoints";
 
 .post-pagination {
   display: flex;
-  font-size: $font-large;
+  max-width: 50%;
+  font-size: $font-medium;
   justify-content: space-between;
   align-items: center;
-  margin: $relative-spacing-xlarge 0;
+  margin: $relative-spacing-xlarge auto;
+  transition: color $transition-function-easeinout $transition-time-normal;
+
+  a:hover {
+    color: var(--invert1);
+  }
 
   > .pagination-number {
     display: flex;
@@ -20,11 +27,11 @@
     }
 
     .active {
-      width: $relative-spacing-xlarge;
-      height: $relative-spacing-xlarge;
-      color: var(--invert2);
-      background: var(--invert1);
-      border-radius: 50%;
+      color: var(--invert1);
     }
+  }
+
+  @include media-breakpoint-down($breakpoint-sm) {
+    max-width: unset;
   }
 }

@@ -1,11 +1,10 @@
 :root {
   --white: #fff;
-  --black: #0f1114;
+  --black: #3b4350;
   --pink1: #ffa7c4;
   --pink2: #ff7597;
-  --blue1: #0072bb;
-  --yellow1: #efbb35;
-  --yellow2: rgb(245, 222, 179);
+  --blue1: #308cd8;
+  --yellow: rgb(235, 203, 145);
   --red1: #c62828;
 }
 
@@ -13,37 +12,31 @@ $palette: (
   light: (
     --bg1: #fff,
     --bg2: #fafafa,
-    --bg3: #fcfcfc,
-    --bg4: #f8f8f8,
+    --bg3: #f0f0f0,
+    --bg4: #ebebeb,
     --invert1: #282c35,
     --invert2: #f9ffee,
     --text-color: #555,
-    --link: var(--text-color),
+    --link: var(--blue1),
     --post-content-link: #d32f2f,
-    --subtle-top1: rgba(107, 183, 86, 1),
-    --subtle-top2: rgba(0, 143, 104, 1),
     --subtle-h1-1: #ef9a9a,
     --subtle-h1-2: #e53935,
     --subtle-h1-3: #b71c1c,
     --header-h2: rgb(0, 143, 131),
-    --hover-top: #8bc34a,
-    --hover-top-icon: #df1c31,
-    --post-card-hover: var(--black),
-    --category-border: #757575,
-    --tag-border: #212121,
+    --hover-link: #df1c31,
     --warning: #e75b7e,
     --info: #6200ee
   ),
   dark: (
-    --bg1: #282c35,
+    --bg1: #0e141b,
     --bg2: #181c22,
     --bg3: #1a1d24,
     --bg4: #000,
     --invert1: #f9ffee,
     --invert2: #282c35,
-    --text-color: #f9ffee,
-    --link: var(--yellow2),
-    --post-content-link: var(--yellow2),
+    --text-color: #f2f5f7,
+    --link: var(--yellow),
+    --post-content-link: var(--yellow),
     --subtle-top1: #212121,
     --subtle-top2: #28313e,
     --subtle-h1-1: #a7ffeb,
@@ -52,9 +45,6 @@ $palette: (
     --header-h2: #ff7597,
     --hover-top: #424242,
     --hover-top-icon: #ffcf44,
-    --post-card-hover: var(--text-color),
-    --category-border: var(--yellow1),
-    --tag-border: #03dac6,
     --warning: #ffc400,
     --info: #009688
   )

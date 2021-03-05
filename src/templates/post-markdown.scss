@@ -125,16 +125,16 @@ $alertStyles: (
   }
 
   table > thead > tr > th {
-    border-bottom: $base-border solid var(--yellow2);
+    border-bottom: $base-border solid var(--yellow);
     font-weight: $font-weight-bold;
   }
 
   table > tbody + tbody {
-    border-top: $base-border solid var(--yellow2);
+    border-top: $base-border solid var(--yellow);
   }
 
   table > tbody > tr > td {
-    border-bottom: $base-border / 3 solid var(--yellow2);
+    border-bottom: $base-border / 3 solid var(--yellow);
   }
 
   .custom-block {

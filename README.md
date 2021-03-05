@@ -43,7 +43,6 @@ See the starter in action » [Demo WebSite](https://gatsby-starter-papan01.netli
 - Tags
 - Categories
 - Posts in Markdown
-- Disqus comments
 - RSS feeds
 - Development tools
   - ESLint(Airbnb) for linting
@@ -109,7 +108,6 @@ const config = {
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "464217807633356", // FB Application ID for using app insights
   siteGATrackingID: "UA-153303709-3", // Tracking code ID for google analytics.
-  disqusShortname: "gatsbyjs-starter-papan01", // Disqus shortname.
   twitterUserName: "", // twitter creator for SEO
   datePublished: "2019-12-08", // for SEO
   copyrightYear: "2019", // for SEO
