@@ -1,6 +1,6 @@
 const config = {
-  author: 'QuietHeroine', // Site owner
-  siteTitle: 'Laura', // Site title.
+  author: 'Barnabás Radován', // Site owner
+  siteTitle: "Barnabás Radován's Blog", // Site title.
   siteTitleShort: "Archeloth's Blog", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Archeloth's Gatsby Blog", // Alternative site title for SEO.
   siteLanguage: 'en', // Site language.
@@ -19,23 +19,23 @@ const config = {
   rrssb: [
     {
       label: 'github',
-      url: 'https://github.com/papan01',
+      url: 'https://github.com/Archeloth',
       iconClassName: 'fab fa-github',
     },
     {
       label: 'mail',
-      url: 'mailto:navy90517@gmail.com',
+      url: 'mailto:barnabas.radovan96@gmail.com',
       iconClassName: 'fa fa-envelope',
     },
     {
       label: 'facebbok',
-      url: 'https://www.facebook.com/louis.peng.58?ref=bookmarks',
+      url: 'https://www.facebook.com/radovan.barnabas',
       iconClassName: 'fab fa-facebook',
     },
     {
-      label: 'instagram',
-      url: 'https://www.instagram.com/n_louis_peng/?hl=zh-tw',
-      iconClassName: 'fab fa-instagram',
+      label: 'twitter',
+      url: 'https://twitter.com/archeloth',
+      iconClassName: 'fab fa-twitter',
     },
   ],
   // Links to pages you want to display in the navigation bar.
